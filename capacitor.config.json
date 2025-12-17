@@ -1,9 +1,0 @@
-{
-  "appId": "com.ednovas.donguatv",
-  "appName": "DonguaTV",
-  "webDir": "public",
-  "server": {
-    "url": "https://ednovas.video",
-    "cleartext": true
-  }
-}
