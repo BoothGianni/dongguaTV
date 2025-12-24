@@ -1,5 +1,5 @@
 ﻿{
-    "appId": "com.hellcps.donguatv",
+    "appId": "com.ednovas.donguatv",
     "appName": "小灰灰影视",
     "webDir": "public",
     "server": {
@@ -15,4 +15,5 @@
     }
 
 }
+
 
