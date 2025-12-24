@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    缺少 viewport-fit=cover。在华为 P30 Pro 等异形屏手机上，没有这个参数，WebView 容器会自动留出“安全区域”黑边或白边，防止内容进入挖孔区，导致画面无法真正全屏。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <!-- 核心：不发送 Referrer -->
     <meta name="referrer" content="no-referrer">
-    <title>E视界</title>
+    <title>小灰灰影视</title>
 
     <!-- 兼容性检测 (必须在所有脚本之前) -->
     <script>
@@ -128,7 +130,7 @@
             scroll-behavior: smooth;
         }
 
-        body {
+        /*body {
             background-color: var(--bg-color);
             color: var(--text-main);
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -137,12 +139,32 @@
             overflow-x: hidden;
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
-            /* 文字渲染优化 */
+            /* 文字渲染优化
             text-rendering: optimizeSpeed;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        }*/
+        
+        body {
+            background-color: #000000; /* 强制底色为纯黑，消除白边 */
+            color: var(--text-main);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            
+            /* --- 核心适配：解决华为 P30 Pro 错位 --- */
+            padding-top: env(safe-area-inset-top); 
+            padding-bottom: calc(60px + env(safe-area-inset-bottom));
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            /* ------------------------------------- */
+        
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            text-rendering: optimizeSpeed;
+            -webkit-font-smoothing: antialiased;
         }
-
+        
         /* 性能优化：图片默认优化 */
         img {
             content-visibility: auto;
