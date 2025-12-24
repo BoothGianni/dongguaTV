@@ -1,6 +1,6 @@
 ﻿{
     "appId": "com.hellcps.donguatv",
-    "appName": "E视界",
+    "appName": "小灰灰影视",
     "webDir": "public",
     "server": {
         "url": "https://vod.hellcps.com",
@@ -15,3 +15,4 @@
     }
 
 }
+
