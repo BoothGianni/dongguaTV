@@ -1,0 +1,16 @@
+{
+  "appId": "com.hellcps.dongguatv",
+  "appName": "小灰灰影院",
+  "webDir": "public",
+  "backgroundColor": "#000000",
+  "server": {
+    "url": "https://vod.hellcps.com",
+    "cleartext": true
+  },
+  "plugins": {
+    "StatusBar": {
+      "overlaysWebView": true,
+      "style": "DARK"
+    }
+  }
+}
