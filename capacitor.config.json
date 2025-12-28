@@ -12,5 +12,10 @@
       "overlaysWebView": true,
       "style": "DARK"
     }
+  },
+  "android": {
+    "allowMixedContent": true,
+    "hideLogs": true,
+    "immersiveMode": true
   }
 }

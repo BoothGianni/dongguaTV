@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- TV 相关特性（移动到 manifest 直接子节点） -->
+    <!-- 同时支持 TV + 手机：leanback & touchscreen 都是非必需 -->
     <uses-feature
             android:name="android.software.leanback"
             android:required="false" />
@@ -19,7 +19,8 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:banner="@drawable/banner_tv">   <!-- ★ 新增：TV 横幅 -->
 
         <activity
                 android:name=".MainActivity"

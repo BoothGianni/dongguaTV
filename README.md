@@ -1,4 +1,4 @@
-﻿# E视界 (DongguaTV Enhanced Edition)
+﻿# 小灰灰影视 (DongguaTV Enhanced Edition)
 
 这是一个经过全面重构和升级的现代流媒体聚合播放器，基于 Node.js 和 Vue 3 构建。相比原版，本作引入了 Netflix 风格的沉浸式 UI、TMDb 数据驱动的动态榜单、以及智能的多源聚合搜索功能。
 
@@ -669,7 +669,7 @@ docker run -d -p 3000:3000 \
 
 | 配置项 | 值 |
 |--------|-----|
-| **App 名称** | E视界 |
+| **App 名称** | 小灰灰影视 |
 | **默认服务器** | `https://ednovas.video` |
 | **图标来源** | 自动从 `public/icon.png` 生成 |
 
@@ -695,7 +695,7 @@ docker run -d -p 3000:3000 \
     ```json
     {
       "appId": "com.ednovas.donguatv",
-      "appName": "E视界",
+      "appName": "小灰灰影视",
       "webDir": "public",
       "server": {
         "url": "https://your-server.com",
